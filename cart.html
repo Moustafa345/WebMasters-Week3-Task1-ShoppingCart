@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <!-- Tailwind Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./CSS/Stylesheet.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo.png" />
+  </head>
+  <body class="box-border p-0 m-0">
+    <nav class="lg:px-16 px-6 bg-white shadow-md flex items-center justify-between py-4">
+      <div class="flex items-center">
+        <a href="./homepage.html" class="flex text-lg font-semibold items-center">
+          <img
+            src="./img/logo.png"
+            width="50"
+            height="50"
+            class="p-2"
+            alt="ShoppingCart Logo"
+          />
+          <div class="text-[#111827] ml-2">Shopping Cart</div>
+        </a>
+      </div>
+      <div class="lg:flex lg:items-center">
+        <nav>
+          <div class="text-xl text-center lg:flex lg:items-center lg:gap-x-5">
+            <a
+              class="text-[#111827] hover:pb-1 hover:border-b-4 hover:border-black"
+              href="./index.html"
+              id="logoutBtn"
+            >
+              Logout
+            </a>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+    <div class="container mx-auto mt-10">
+      <div class="sm:flex shadow-md my-10">
+        <div id="cart-items" class="w-full sm:w-3/4 bg-white px-10 py-10">
+          <div class="flex justify-between border-b pb-8">
+            <h1 class="font-semibold text-2xl">Shopping Cart</h1>
+            <h2 id="item-count" class="font-semibold text-2xl">0 Items</h2>
+          </div>
+
+          <!-- Dynamically added items will appear here -->
+          <div id="cart-content" class="mt-10"></div>
+
+          <a href="./homepage.html" class="flex font-semibold text-indigo-600 text-sm mt-10 items-center">
+            <i class="fa-solid fa-arrow-left-long  mr-2 text-indigo-600 w-4"></i>
+            Continue Shopping
+          </a>
+        </div>
+
+        <div id="summary" class="w-full sm:w-1/4 px-8 py-10">
+          <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
+          <div class="flex justify-between items-center mt-10 mb-5">
+            <div>
+              <span class="font-semibold text-sm uppercase mr-1" id="summary-item-count">0</span><span>Products</span>
+            </div>
+            <span id="total-price" class="font-semibold text-sm">$0</span>
+          </div>
+          <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Local File -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

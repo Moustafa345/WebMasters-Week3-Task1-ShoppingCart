@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShoppingCart Login</title>
+    <!-- Tailwind Framework -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="./CSS/Stylesheet.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo.png" />  </head>
+    <body class="flex justify-center items-center min-h-screen bg-gray-100 box-border p-0 m-0">
+      <div
+        class="flex flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-4 p-8 md:p-10 2xl:p-12 3xl:p-14 bg-[#ffffff] rounded-2xl shadow-xl"
+      >
+        <div class="flex flex-row gap-3 pb-4">
+          <div>
+            <img src="./img/logo.png" width="50" alt="Logo" />
+          </div>
+          <h1 class="text-3xl font-bold text-[#4B5563] my-auto">Shopping Cart</h1>
+        </div>
+        <div class="text-sm font-light text-[#6B7280] pb-8">
+          Login to your account on Shopping Cart.
+        </div>
+        <form id="loginForm" class="flex flex-col">
+          <div class="pb-2">
+            <label for="email" class="block mb-2 text-sm font-medium text-[#111827]">Email</label>
+            <div class="relative text-gray-400">
+              <span class="absolute inset-y-0 left-0 flex items-center p-1 pl-3">
+                <i class="fa-regular fa-envelope fa-xl"></i></span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring ring-transparent focus:ring-1 focus:outline-none focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4"
+                placeholder="name@email.com"
+                autocomplete="off"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="pb-6">
+            <label for="password" class="block mb-2 text-sm font-medium text-[#111827]">Password</label>
+            <div class="relative text-gray-400">
+              <span class="absolute inset-y-0 left-0 flex items-center p-1 pl-3">
+                <i class="fa-solid fa-key fa-xl"></i></span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="••••••••••"
+                class="pl-12 mb-2 bg-gray-50 text-gray-600 border focus:border-transparent border-gray-300 sm:text-sm rounded-lg ring ring-transparent focus:ring-1 focus:outline-none focus:ring-gray-400 block w-full p-2.5 rounded-l-lg py-3 px-4"
+                autocomplete="new-password"
+                disabled
+              />
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="w-full text-[#FFFFFF] bg-gray-800 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-6"
+          >
+            Login
+          </button>
+          <div class="text-sm font-light text-[#6B7280]">
+            Don't you have an account?
+            <a href="./signup.html" class="font-medium text-bg-gray-800 hover:underline"
+              >Sign up</a
+            >
+          </div>
+        </form>
+      </div>
+
+    
+    <!-- JavaScript Local File -->
+    <script src="./JS/main.js"></script>
+  </body>
+</html>
